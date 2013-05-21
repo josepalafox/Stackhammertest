@@ -1,0 +1,46 @@
+{
+  "metaVersion": "1.1.7",
+  "accessKey": "Jose\u0027s AWS Account",
+  "puppetVersion": "PUPPET_ENTERPRISE28",
+  "master": {
+    "type": "C1_MEDIUM",
+    "deployState": "RUNNING",
+    "image": "ami-14aa2524",
+    "publicKeys": [
+      "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQCPwsaxzMpbcJ+lll6zvwDZfy1sDkOFnIbjp7APvOTTDmw3e6/SX1h8u98hUpOHvKoeIWumu5Vdf06CnC3N3hwyBNX/FOz9L6qO4gFuaqqvgvu+S8IWnxN/AMRWJAtdcqPArffLiczqGY/3elOsui21Jn8ieXgIsZIO5SpNX4wE0w\u003d\u003d"
+    ],
+    "name": "master"
+  },
+  "environments": [
+    {
+      "siteLocation": "manifests",
+      "moduleLocations": [
+        "modules"
+      ],
+      "nodes": [
+        {
+          "type": "M1_SMALL",
+          "deployState": "RUNNING",
+          "image": "ami-14aa2524",
+          "publicKeys": [
+            "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQCPwsaxzMpbcJ+lll6zvwDZfy1sDkOFnIbjp7APvOTTDmw3e6/SX1h8u98hUpOHvKoeIWumu5Vdf06CnC3N3hwyBNX/FOz9L6qO4gFuaqqvgvu+S8IWnxN/AMRWJAtdcqPArffLiczqGY/3elOsui21Jn8ieXgIsZIO5SpNX4wE0w\u003d\u003d"
+          ],
+          "role": "agent",
+          "name": "centos63a"
+        },
+        {
+          "type": "M1_SMALL",
+          "deployState": "RUNNING",
+          "image": "ami-14aa2524",
+          "publicKeys": [
+            "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQCPwsaxzMpbcJ+lll6zvwDZfy1sDkOFnIbjp7APvOTTDmw3e6/SX1h8u98hUpOHvKoeIWumu5Vdf06CnC3N3hwyBNX/FOz9L6qO4gFuaqqvgvu+S8IWnxN/AMRWJAtdcqPArffLiczqGY/3elOsui21Jn8ieXgIsZIO5SpNX4wE0w\u003d\u003d"
+          ],
+          "role": "agent",
+          "name": "centos63b"
+        }
+      ],
+      "name": "production"
+    }
+  ],
+  "puppetLintEnabled": false
+}
